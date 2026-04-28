@@ -51,6 +51,14 @@ const keyFigures = [
     wikiCredit: "Wikimedia Commons",
   },
   {
+    name: "Baron von Steuben",
+    role: "Prussian Inspector General",
+    years: "1730-1794",
+    description: "Prussian officer who transformed raw farmers into disciplined soldiers at Valley Forge. His training manual and drill techniques saved the army from collapse.",
+    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Charles_Willson_Peale_-_Baron_Steuben_-_NPG.78.144_-_National_Portrait_Gallery.jpg",
+    wikiCredit: "Charles Willson Peale / Wikimedia Commons",
+  },
+  {
     name: "Thomas Jefferson",
     role: "Author of Independence",
     years: "1743-1826",
@@ -159,7 +167,7 @@ export default function Home() {
               Theater of War
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Click markers to explore battles across the colonies
+              Historical map of the American colonies with battle locations
             </p>
           </div>
           
@@ -179,17 +187,18 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Map */}
-          <div className="map-container aspect-[16/10] relative">
-            {/* State labels */}
-            <div className="absolute inset-0 p-6 md:p-10">
-              <div className="absolute top-[18%] left-[85%] text-xs md:text-sm text-gray-500 font-bold tracking-wider opacity-60">MASSACHUSETTS</div>
-              <div className="absolute top-[28%] left-[75%] text-xs md:text-sm text-gray-500 font-bold tracking-wider opacity-60">NEW YORK</div>
-              <div className="absolute top-[40%] left-[80%] text-xs md:text-sm text-gray-500 font-bold tracking-wider opacity-60">NEW JERSEY</div>
-              <div className="absolute top-[46%] left-[74%] text-xs md:text-sm text-gray-500 font-bold tracking-wider opacity-60">PENNSYLVANIA</div>
-              <div className="absolute top-[58%] left-[70%] text-xs md:text-sm text-gray-500 font-bold tracking-wider opacity-60">MARYLAND / VIRGINIA</div>
-              
-              {/* Battle markers */}
+          {/* Historical Map Container */}
+          <div className="relative border-2 border-gold/40 rounded-xl overflow-hidden shadow-[0_0_60px_rgba(212,175,55,0.15)]">
+            {/* Historical Map Image */}
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_America_1762-83.jpg/1280px-North_America_1762-83.jpg"
+              alt="Map of North American Colonies 1762-1783"
+              className="w-full h-auto block"
+            />
+            
+            {/* Interactive overlay with battle markers */}
+            <div className="absolute inset-0 p-4 md:p-8">
+              {/* Battle markers positioned approximately on the map */}
               {mapBattles.map((battle) => (
                 <button
                   key={battle.name}
@@ -213,7 +222,7 @@ export default function Home() {
                   />
                   
                   {/* Label */}
-                  <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 text-xs font-bold text-white whitespace-nowrap opacity-80 group-hover:opacity-100 transition-opacity">
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 text-xs font-bold text-white whitespace-nowrap opacity-80 group-hover:opacity-100 transition-opacity bg-black/50 px-2 py-0.5 rounded">
                     {battle.name}
                   </span>
                   
@@ -231,14 +240,17 @@ export default function Home() {
               ))}
             </div>
             
-            {/* Decorative border effect */}
-            <div className="absolute inset-0 border border-gold/20 rounded-lg pointer-events-none" />
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#0a0a0f] px-4">
-              <span className="text-gold text-xs tracking-widest">NORTH</span>
+            {/* North label */}
+            <div className="absolute top-2 left-1/2 -translate-x-1/2 bg-black/70 px-3 py-1 rounded-full border border-gold/30">
+              <span className="text-gold text-xs tracking-widest font-bold">NORTH ↑</span>
             </div>
           </div>
           
+          {/* Image credit */}
           <p className="text-center text-gray-500 text-sm mt-4">
+            Map: North America 1762-83 showing British and Spanish territories — Wikimedia Commons
+          </p>
+          <p className="text-center text-gray-600 text-xs mt-2">
             Battle data: National Park Service, Smithsonian Institution
           </p>
         </div>
