@@ -30,8 +30,8 @@ const keyFigures = [
     role: "Commander-in-Chief",
     years: "1732-1799",
     description: "Led the Continental Army through brutal winters and impossible odds. Won at Trenton and Yorktown. His leadership held the army together.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
-    wikiCredit: "Gilbert Stuart / Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/1a2332/d4af37?text=George+Washington",
+    wikiCredit: "Portrait: Gilbert Stuart (placeholder)",
     sideMission: true,
   },
   {
@@ -39,48 +39,48 @@ const keyFigures = [
     role: "Diplomat & Statesman",
     years: "1706-1790",
     description: "Secured the crucial French alliance that saved the revolution. Scientist, writer, and master negotiator who convinced France to fund the war.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/c/cc/BenFranklinDuplessis.jpg",
-    wikiCredit: "Joseph-Siffred Duplessis / Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/2c3e50/f5f0e1?text=Benjamin+Franklin",
+    wikiCredit: "Portrait: Joseph-Siffred Duplessis (placeholder)",
   },
   {
     name: "Marquis de Lafayette",
     role: "French General",
     years: "1757-1834",
     description: "Young French noble who defied his king to join the American cause at just 19. Became Washington's protégé and surrogate son.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Gilbert_du_Motier_Marquis_de_Lafayette.jpg",
-    wikiCredit: "Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/4a3728/d4af37?text=Lafayette",
+    wikiCredit: "Portrait: Wikimedia Commons (placeholder)",
   },
   {
     name: "Baron von Steuben",
     role: "Prussian Inspector General",
     years: "1730-1794",
     description: "Prussian officer who transformed raw farmers into disciplined soldiers at Valley Forge. His training manual and drill techniques saved the army from collapse.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Charles_Willson_Peale_-_Baron_Steuben_-_NPG.78.144_-_National_Portrait_Gallery.jpg",
-    wikiCredit: "Charles Willson Peale / Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/3d2817/c9a227?text=Baron+von+Steuben",
+    wikiCredit: "Portrait: Charles Willson Peale (placeholder)",
   },
   {
     name: "Thomas Jefferson",
     role: "Author of Independence",
     years: "1743-1826",
     description: "Wrote the Declaration of Independence. His words gave the revolution its moral foundation and enduring legacy.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg",
-    wikiCredit: "Rembrandt Peale / Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/1e3a5f/d4af37?text=Thomas+Jefferson",
+    wikiCredit: "Portrait: Rembrandt Peale (placeholder)",
   },
   {
     name: "Benedict Arnold",
     role: "Traitor (Former Hero)",
     years: "1741-1801",
     description: "Brilliant tactician whose heroics at Saratoga changed the war's course. Betrayed West Point. His name became synonymous with treason.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/5/54/Benedict_arnold_1.jpg",
-    wikiCredit: "Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/3d0c0c/8b0000?text=Benedict+Arnold",
+    wikiCredit: "Portrait: Wikimedia Commons (placeholder)",
   },
   {
     name: "King George III",
     role: "British Monarch",
     years: "1738-1820",
     description: "Refused to see the colonies as equals. His inflexibility and arrogance cost Britain its American empire.",
-    wikiImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Allan_Ramsay_-_King_George_III_-_Google_Art_Project.jpg/800px-Allan_Ramsay_-_King_George_III_-_Google_Art_Project.jpg",
-    wikiCredit: "Allan Ramsay / Wikimedia Commons",
+    wikiImage: "https://placehold.co/400x500/4a1c1c/d4af37?text=King+George+III",
+    wikiCredit: "Portrait: Allan Ramsay (placeholder)",
   },
 ];
 
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="relative border-2 border-gold/40 rounded-xl overflow-hidden shadow-[0_0_60px_rgba(212,175,55,0.15)]">
             {/* Historical Map Image */}
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/North_America_1762-83.jpg/1280px-North_America_1762-83.jpg"
+              src="https://placehold.co/1280x800/1a2332/d4af37?text=Colonial+Map+1762-83"
               alt="Map of North American Colonies 1762-1783"
               className="w-full h-auto block"
             />
