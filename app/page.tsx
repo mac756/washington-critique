@@ -30,8 +30,8 @@ const keyFigures = [
     role: "Commander-in-Chief",
     years: "1732-1799",
     description: "Led the Continental Army through brutal winters and impossible odds. Won at Trenton and Yorktown. His leadership held the army together.",
-    wikiImage: "https://placehold.co/400x500/1a2332/d4af37?text=George+Washington",
-    wikiCredit: "Portrait: Gilbert Stuart (placeholder)",
+    wikiImage: "/images/washington.jpg",
+    wikiCredit: "Metropolitan Museum of Art / Public Domain",
     sideMission: true,
   },
   {
@@ -39,48 +39,48 @@ const keyFigures = [
     role: "Diplomat & Statesman",
     years: "1706-1790",
     description: "Secured the crucial French alliance that saved the revolution. Scientist, writer, and master negotiator who convinced France to fund the war.",
-    wikiImage: "https://placehold.co/400x500/2c3e50/f5f0e1?text=Benjamin+Franklin",
-    wikiCredit: "Portrait: Joseph-Siffred Duplessis (placeholder)",
+    wikiImage: "/images/franklin.jpg",
+    wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
     name: "Marquis de Lafayette",
     role: "French General",
     years: "1757-1834",
     description: "Young French noble who defied his king to join the American cause at just 19. Became Washington's protégé and surrogate son.",
-    wikiImage: "https://placehold.co/400x500/4a3728/d4af37?text=Lafayette",
-    wikiCredit: "Portrait: Wikimedia Commons (placeholder)",
+    wikiImage: "/images/lafayette.jpg",
+    wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
     name: "Baron von Steuben",
     role: "Prussian Inspector General",
     years: "1730-1794",
     description: "Prussian officer who transformed raw farmers into disciplined soldiers at Valley Forge. His training manual and drill techniques saved the army from collapse.",
-    wikiImage: "https://placehold.co/400x500/3d2817/c9a227?text=Baron+von+Steuben",
-    wikiCredit: "Portrait: Charles Willson Peale (placeholder)",
+    wikiImage: "/images/steuben.jpg",
+    wikiCredit: "Library of Congress / Public Domain",
   },
   {
     name: "Thomas Jefferson",
     role: "Author of Independence",
     years: "1743-1826",
     description: "Wrote the Declaration of Independence. His words gave the revolution its moral foundation and enduring legacy.",
-    wikiImage: "https://placehold.co/400x500/1e3a5f/d4af37?text=Thomas+Jefferson",
-    wikiCredit: "Portrait: Rembrandt Peale (placeholder)",
+    wikiImage: "/images/jefferson.jpg",
+    wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
     name: "Benedict Arnold",
     role: "Traitor (Former Hero)",
     years: "1741-1801",
     description: "Brilliant tactician whose heroics at Saratoga changed the war's course. Betrayed West Point. His name became synonymous with treason.",
-    wikiImage: "https://placehold.co/400x500/3d0c0c/8b0000?text=Benedict+Arnold",
-    wikiCredit: "Portrait: Wikimedia Commons (placeholder)",
+    wikiImage: "/images/arnold.jpg",
+    wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
     name: "King George III",
     role: "British Monarch",
     years: "1738-1820",
     description: "Refused to see the colonies as equals. His inflexibility and arrogance cost Britain its American empire.",
-    wikiImage: "https://placehold.co/400x500/4a1c1c/d4af37?text=King+George+III",
-    wikiCredit: "Portrait: Allan Ramsay (placeholder)",
+    wikiImage: "/images/george3.jpg",
+    wikiCredit: "Library of Congress / Public Domain",
   },
 ];
 
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="relative border-2 border-gold/40 rounded-xl overflow-hidden shadow-[0_0_60px_rgba(212,175,55,0.15)]">
             {/* Historical Map Image */}
             <img
-              src="https://placehold.co/1280x800/1a2332/d4af37?text=Colonial+Map+1762-83"
+              src="/images/map.jpg"
               alt="Map of North American Colonies 1762-1783"
               className="w-full h-auto block"
             />
@@ -248,7 +248,7 @@ export default function Home() {
           
           {/* Image credit */}
           <p className="text-center text-gray-500 text-sm mt-4">
-            Map: North America 1762-83 showing British and Spanish territories — Wikimedia Commons
+            Map: Liberty Triumphant; or the Downfall of Oppression (1775 political cartoon) — Library of Congress
           </p>
           <p className="text-center text-gray-600 text-xs mt-2">
             Battle data: National Park Service, Smithsonian Institution
@@ -339,7 +339,7 @@ export default function Home() {
             <h2 className="font-serif text-5xl md:text-6xl font-bold mb-4 text-gradient-gold">
               Key Figures
             </h2>
-            <p className="text-gray-400">The men who shaped history — portraits via Wikimedia Commons</p>
+            <p className="text-gray-400">The men who shaped history — portraits via Met Museum & Library of Congress</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
