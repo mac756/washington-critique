@@ -113,7 +113,7 @@ const historianQuotes = [
 
 export default function WashingtonCritique() {
   return (
-    <main className="min-h-screen bg-[#0a0a0f]">
+    <main className="min-h-screen" style={{ backgroundColor: '#0a0a0f' }}>
       {/* HEADER */}
       <section className="relative py-12 px-6 overflow-hidden">
         {/* Background glow */}

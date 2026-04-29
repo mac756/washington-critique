@@ -30,7 +30,7 @@ const keyFigures = [
     role: "Commander-in-Chief",
     years: "1732-1799",
     description: "Led the Continental Army through brutal winters and impossible odds. Won at Trenton and Yorktown. His leadership held the army together.",
-    wikiImage: "/images/washington.jpg",
+    wikiImage: "./images/washington.jpg",
     wikiCredit: "Metropolitan Museum of Art / Public Domain",
     sideMission: true,
   },
@@ -39,7 +39,7 @@ const keyFigures = [
     role: "Diplomat & Statesman",
     years: "1706-1790",
     description: "Secured the crucial French alliance that saved the revolution. Scientist, writer, and master negotiator who convinced France to fund the war.",
-    wikiImage: "/images/franklin.jpg",
+    wikiImage: "./images/franklin.jpg",
     wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
@@ -47,7 +47,7 @@ const keyFigures = [
     role: "French General",
     years: "1757-1834",
     description: "Young French noble who defied his king to join the American cause at just 19. Became Washington's protégé and surrogate son.",
-    wikiImage: "/images/lafayette.jpg",
+    wikiImage: "./images/lafayette.jpg",
     wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
@@ -55,7 +55,7 @@ const keyFigures = [
     role: "Prussian Inspector General",
     years: "1730-1794",
     description: "Prussian officer who transformed raw farmers into disciplined soldiers at Valley Forge. His training manual and drill techniques saved the army from collapse.",
-    wikiImage: "/images/steuben.jpg",
+    wikiImage: "./images/steuben.jpg",
     wikiCredit: "Library of Congress / Public Domain",
   },
   {
@@ -63,7 +63,7 @@ const keyFigures = [
     role: "Author of Independence",
     years: "1743-1826",
     description: "Wrote the Declaration of Independence. His words gave the revolution its moral foundation and enduring legacy.",
-    wikiImage: "/images/jefferson.jpg",
+    wikiImage: "./images/jefferson.jpg",
     wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
@@ -71,7 +71,7 @@ const keyFigures = [
     role: "Traitor (Former Hero)",
     years: "1741-1801",
     description: "Brilliant tactician whose heroics at Saratoga changed the war's course. Betrayed West Point. His name became synonymous with treason.",
-    wikiImage: "/images/arnold.jpg",
+    wikiImage: "./images/arnold.jpg",
     wikiCredit: "Metropolitan Museum of Art / Public Domain",
   },
   {
@@ -79,7 +79,7 @@ const keyFigures = [
     role: "British Monarch",
     years: "1738-1820",
     description: "Refused to see the colonies as equals. His inflexibility and arrogance cost Britain its American empire.",
-    wikiImage: "/images/george3.jpg",
+    wikiImage: "./images/george3.jpg",
     wikiCredit: "Library of Congress / Public Domain",
   },
 ];
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="relative border-2 border-gold/40 rounded-xl overflow-hidden shadow-[0_0_60px_rgba(212,175,55,0.15)]">
             {/* Historical Map Image */}
             <img
-              src="/images/map.jpg"
+              src="./images/map.jpg"
               alt="Map of North American Colonies 1762-1783"
               className="w-full h-auto block"
             />
