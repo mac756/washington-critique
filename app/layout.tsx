@@ -28,7 +28,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-[#0a0e14] text-[#e8e6e3] font-sans">
+      <body className="min-h-full font-sans" style={{ backgroundColor: '#0a0e14', color: '#e8e6e3' }}>
         {children}
       </body>
     </html>
